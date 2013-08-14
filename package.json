@@ -31,8 +31,9 @@
   ],
 
   "dependencies": {
+    "put": ">= 0.0.6",
+    "binary": ">=0.3",
     "buffertools": ">=1.0.3",
-    "binary": ">=0.2.5 <0.3",
     "bignum": ">=0.4.0",
     "step": ">=0.0.4",
     "winston": ">=0.2.6",

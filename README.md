@@ -193,6 +193,12 @@ yet.
 
 Go to the `bitcoinjs` folder and run:
 
+node.js > v0.6.0 
+``` sh
+node-gyp configure build
+```
+
+node.js < v0.6.0 
 ``` sh
 node-waf configure build
 ```
