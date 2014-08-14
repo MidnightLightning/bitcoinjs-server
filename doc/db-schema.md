@@ -76,3 +76,6 @@ So instead of `txn~[txHash]~blah`, it could be `block~[blockHash]~txn~[txHash]~b
 Instead, you could do `txn~[txHash] => block~[blockHash]~txn~[index]`, and then `block~[blockHash]~txn~[index]~blah`. That replaces the `txHash` with an index value in the block, which is much shorter. Then if you know the hash of a transaction and want to look it up, look up `txn~[txHash]` to find out which block it's part of, and then fetch the data.
 
 Either way makes transaction lookups take two different lookups if you don't know the block/index the transaction is a part of, which is a worse solution if that's the primary way transactions are found.
+
+
+* [DailyJS](http://dailyjs.com/2013/05/03/leveldb-and-node-2/) post including namespacing advice.
